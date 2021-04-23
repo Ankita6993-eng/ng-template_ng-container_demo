@@ -1,0 +1,14 @@
+ <div class="heading">
+      <h4>Welcome to content projection</h4>
+    </div>
+    <div class="body">
+      <div>Hello world</div>
+    </div>
+    <div class="tag">
+      <ng-content></ng-content>
+    </div>
+    <div class="footer">
+      <ng-content></ng-content>
+      <ng-container *ngTemplateOutlet="footertemplate ? footertemplate:defaultfooter"></ng-container>
+</div>
+<ng-template #defaultfooter></ng-template>
