@@ -1,6 +1,8 @@
 <router-outlet></router-outlet>
-<!-- normal div -->
 
+
+<!-- ng-template start -->
+<!-- normal div -->
  <div class="main">
 <div class="box1">
 
@@ -28,19 +30,18 @@
 </div>
 <div class="box2">
   <p>    As the name suggests the ng-template is a template element that Angular uses with structural directives
-         <br/> (*ngIf, *ngFor, [ngSwitch] and custom directives).<br/></p>
-         <p>These template elements only work in the presence of structural directives. Angular wraps the host<br/>
-          element (to which the directive is applied) inside ng-template and consumes the ng-template in the<br/> 
+          ([ngIf], [ngFor], [ngSwitch] and custom directives).<br/></p>
+         <p>These template elements only work in the presence of structural directives. Angular wraps the host
+          element (to which the directive is applied) inside ng-template and consumes the ng-template in the
           finished DOM by replacing it with diagnostic comments.</p>
 </div>
 </div>
+<!-- ng-template end -->
 
 
-
-
+<!--  ng-container start  -->
 <div class="main1">
 <div class="box1">
-
 <div class="id2"> <h2>ng-container</h2>
 <!-- Normal div -->
     <div *ngFor="let item of items">
@@ -60,8 +61,10 @@
          We should use ng-container when we just want to apply multiple structural directives without introducing any extra element in our DOM.</p>
 </div>
 </div>
+<!--  ng-container end  -->
 
- <!-- Using ng-content  -->
+
+ <!-- ng-content start  -->
 <div class="main2">
 <div class="box1">
 
@@ -79,31 +82,21 @@
   </app-multi-content>
 </div>
 </div>
-<div class="box3">
-  <p>   The Angular ng-container is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
-         We should use ng-container when we just want to apply multiple structural directives without introducing any extra element in our DOM.</p>
+<div class="box4">
+  <p>   The ng-content tag is used for content projection. 
+  It is basically a placeholder to hold the dynamic content until it is parsed. 
+  Once the template is parsed, Angular replaces the tag with content.</p>
+  <p>You use the ng-content tag as a placeholder for that dynamic content,
+   then when the template is parsed Angular will replace that placeholder tag with your content.</p>
 </div>
 </div>
+<!--  ng-container end  -->
 
 
+<!--*ngTemplateOutlet start-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Using *ngTemplateOutlet-->
-
-
+<div class="main3">
+<div class="box1">
 <div class="id4"> <h2>*ngTemplateOutlet</h2>
 <ng-template #greet><span>Hello</span></ng-template>
    <ng-container *ngTemplateOutlet="greet"></ng-container>
@@ -117,3 +110,18 @@
 </ng-template>
     <app-project-content [footertemplate]="customfooter"></app-project-content>
 </div>
+</div>
+<div class="box5">
+  <p>   ngTemplateOutlet is a directive. 
+  It instantiates a template dynamically using a template 
+    reference and context object as parameters.</p>
+  <p>The template does not render itself.
+   We must use a structural directive to render it. 
+   That is what ngTemplateOutlet does</p>
+<p>We pass the Template Reference to the ngTemplateOutlet directive. 
+It renders the template. Any inner content that ngTemplateOutlet 
+    encloses will not be rendered.</p>
+</div>
+</div>
+
+<!--*ngTemplateOutlet end-->

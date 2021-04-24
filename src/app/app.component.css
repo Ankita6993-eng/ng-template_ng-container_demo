@@ -45,6 +45,7 @@
    border-width: thin;
    height:280px;
    width:1100px;
+    background-color: wheat;
 }
 .box1
 {
@@ -58,10 +59,11 @@
     margin-right:100px;
     margin-top:20px;
     width: 570px;
-    height: 200px;
+    height: 150px;
     padding-left:-150px;
      border:1px solid black;
     border-width: thin;
+    background-color: palegoldenrod;
 }
 h2{
     background-color:rgba(255, 99, 71, 0.6);
@@ -75,6 +77,7 @@ h2{
    border-width: thin;
    height:250px;
    width:1100px;
+   background-color: wheat;
 }
 .box3{
     margin-right:100px;
@@ -84,6 +87,7 @@ h2{
     padding-left:-150px;
      border:1px solid black;
     border-width: thin;
+     background-color: palegoldenrod;
 }
 .main2
 {
@@ -94,4 +98,36 @@ h2{
    border-width: thin;
    height:325px;
    width:1100px;
+   background-color: wheat;
+}
+.box4{
+    margin-right:100px;
+    margin-top:50px;
+    width: 570px;
+    height: 150px;
+    padding-left:-150px;
+     border:1px solid black;
+    border-width: thin;
+     background-color: palegoldenrod;
+}
+.main3
+{
+     margin-top: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border:1px solid black;
+   border-width: thin;
+   height:290px;
+   width:1100px;
+   background-color: wheat;
+}
+.box5{
+    margin-right:100px;
+    margin-top:50px;
+    width: 570px;
+    height: 170px;
+    padding-left:-150px;
+     border:1px solid black;
+    border-width: thin;
+     background-color: palegoldenrod;
 }
