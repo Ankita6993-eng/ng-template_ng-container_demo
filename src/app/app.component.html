@@ -1,6 +1,9 @@
 <router-outlet></router-outlet>
 <!-- normal div -->
 
+ <div class="main">
+<div class="box1">
+
 <div class="id1"> <h2>ng-template</h2>
 <p>normal div</p>
 <div *ngIf="sayHello" class="hello-world">Hello world</div>
@@ -22,6 +25,22 @@
 <ng-template #hello class="hello-world">Hello world 4</ng-template>
 </div>
 
+</div>
+<div class="box2">
+  <p>    As the name suggests the ng-template is a template element that Angular uses with structural directives
+         <br/> (*ngIf, *ngFor, [ngSwitch] and custom directives).<br/></p>
+         <p>These template elements only work in the presence of structural directives. Angular wraps the host<br/>
+          element (to which the directive is applied) inside ng-template and consumes the ng-template in the<br/> 
+          finished DOM by replacing it with diagnostic comments.</p>
+</div>
+</div>
+
+
+
+
+<div class="main1">
+<div class="box1">
+
 <div class="id2"> <h2>ng-container</h2>
 <!-- Normal div -->
     <div *ngFor="let item of items">
@@ -34,6 +53,17 @@
       <div *ngIf="item.id">{{item.name}}</div>
     </ng-container>
 </div>
+
+</div>
+<div class="box3">
+  <p>   The Angular ng-container is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
+         We should use ng-container when we just want to apply multiple structural directives without introducing any extra element in our DOM.</p>
+</div>
+</div>
+
+ <!-- Using ng-content  -->
+<div class="main2">
+<div class="box1">
 
 <div class="id3"> <h2>ng-content</h2>
   <app-project-content>
@@ -48,6 +78,28 @@
       <div class="tag">Using ng content</div>
   </app-multi-content>
 </div>
+</div>
+<div class="box3">
+  <p>   The Angular ng-container is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
+         We should use ng-container when we just want to apply multiple structural directives without introducing any extra element in our DOM.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Using *ngTemplateOutlet-->
 

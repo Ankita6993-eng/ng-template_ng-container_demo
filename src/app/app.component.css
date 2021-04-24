@@ -1,9 +1,10 @@
 .id1{
     width: 300px;
     height: 250px;
-    border:1px solid black;
-   border-width: thin;
-    margin: auto;
+    margin-left:80px;
+    background-color: lightblue;
+     border:1px solid black;
+    border-width: thin;
 }
 .id2{
     margin-top: 10px;
@@ -11,7 +12,8 @@
     height: 220px;
     border:1px solid black;
    border-width: thin;
-   margin-left:515px;
+   margin-left:80px;
+    background-color: lightblue;
 }
 .p1{
       text-decoration: underline;     
@@ -22,13 +24,74 @@
     height: 290px;
     border:1px solid black;
    border-width: thin;
-    margin-left:515px;
+    margin-left:80px;
+     background-color: lightblue;
 }
 .id4{
     margin-top: 10px;
     width: 300px;
     height: 250px;
     border:1px solid black;
+    border-width: thin;
+    margin-left:80px;
+     background-color: lightblue;
+}
+
+.main
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border:1px solid black;
    border-width: thin;
-    margin-left:515px;
+   height:280px;
+   width:1100px;
+}
+.box1
+{
+    width: 300px;
+    height: 280px;
+    margin:10px;
+    padding-left:-90px;
+    
+}
+.box2{
+    margin-right:100px;
+    margin-top:20px;
+    width: 570px;
+    height: 200px;
+    padding-left:-150px;
+     border:1px solid black;
+    border-width: thin;
+}
+h2{
+    background-color:rgba(255, 99, 71, 0.6);
+}
+.main1
+{
+     margin-top: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border:1px solid black;
+   border-width: thin;
+   height:250px;
+   width:1100px;
+}
+.box3{
+    margin-right:100px;
+    margin-top:50px;
+    width: 570px;
+    height: 100px;
+    padding-left:-150px;
+     border:1px solid black;
+    border-width: thin;
+}
+.main2
+{
+     margin-top: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border:1px solid black;
+   border-width: thin;
+   height:325px;
+   width:1100px;
 }
