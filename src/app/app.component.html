@@ -108,9 +108,11 @@
 <ng-template #customfooter>
     <div class="custom-class">Footer Content Here...</div>
 </ng-template>
-    <app-project-content [footertemplate]="customfooter"></app-project-content>
+    <ng-container *ngTemplateOutlet="customfooter?customfooter:defaultfooter"></ng-container>
 </div>
+<ng-template #defaultfooter>some footer content</ng-template>
 </div>
+
 <div class="box5">
   <p>   ngTemplateOutlet is a directive. 
   It instantiates a template dynamically using a template 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,TemplateRef,Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'exmple-ngconyent';
 
   sayHello: boolean = true;
-
+  @Input() footertemplate:TemplateRef<any>
   items: any[] = [
     {
       id: 1,
