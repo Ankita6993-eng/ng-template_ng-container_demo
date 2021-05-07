@@ -9,4 +9,6 @@
     </div>
     <div class="footer">
       <ng-content></ng-content>
+      <ng-container *ngTemplateOutlet="footertemplate ? footertemplate : defaultfooter"></ng-container>
 </div>
+<ng-template #defaultfooter>default</ng-template>
