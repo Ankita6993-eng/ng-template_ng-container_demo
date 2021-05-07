@@ -18,12 +18,12 @@
 </ng-template>
 <ng-template *ngIf="sayHello" class="hello-world">Hello world 2</ng-template>
 <ng-template [ngIf]="sayHello">
-    <ng-template>Hello Wolrd 2</ng-template>
+    <ng-template>Hello Wolrd !!!!!!!!!</ng-template>
 </ng-template>
 
 <ng-template [ngIf]="sayHello" class="hello-world">Hello world 3</ng-template>
 <div></div>
-<ng-template *ngIf="sayHello then hello" class="hello-world">Hello world 4a</ng-template>
+<ng-template *ngIf="sayHello then hello" class="hello-world"></ng-template>
 <ng-template #hello class="hello-world">Hello world 4</ng-template>
 </div>
 
@@ -73,6 +73,7 @@
       <div>Welcome to the ng-content</div>
       <div>My first project</div>
   </app-project-content>
+  
 
   <app-multi-content>
       <h4>Welcome to multiple content projection</h4>
@@ -90,7 +91,7 @@
    then when the template is parsed Angular will replace that placeholder tag with your content.</p>
 </div>
 </div>
-<!--  ng-container end  -->
+<!--  ng-content end  -->
 
 
 <!--*ngTemplateOutlet start-->
@@ -99,10 +100,11 @@
 <div class="box1">
 <div class="id4"> <h2>*ngTemplateOutlet</h2>
 <ng-template #greet><span>Hello</span></ng-template>
-   <ng-container *ngTemplateOutlet="greet"></ng-container>
+   <ng-container *ngTemplateOutlet="greet"></ng-container><br/>
+   <ng-container *ngTemplateOutlet="hello"></ng-container>
 <br/>
-   <ng-container *ngTemplateOutlet="eng; context: item1"></ng-container>
-   <ng-template #eng let-name="name" > <span> {{name}}!</span></ng-template>
+   <!-- <ng-container *ngTemplateOutlet="eng; context: item1"></ng-container>
+   <ng-template #eng let-name="name" > <span> {{name}}!</span></ng-template> -->
 
 
 <ng-template #customfooter>

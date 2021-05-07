@@ -6,7 +6,7 @@ import { Component, OnInit ,Input,TemplateRef} from '@angular/core';
   styleUrls: ['./project-content.component.css']
 })
 export class ProjectContentComponent implements OnInit {
-@Input() footertemplate?:TemplateRef<any>
+@Input() footertemplate:TemplateRef<any>
   constructor() { }
 
   ngOnInit(): void {

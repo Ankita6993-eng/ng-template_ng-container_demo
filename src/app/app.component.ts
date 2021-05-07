@@ -9,8 +9,10 @@ export class AppComponent {
   title = 'exmple-ngconyent';
 
   sayHello: boolean = true;
-  name="Item1"
+
   item1={name:"ABC"}
+
+  
   items: any[] = [
     {
       id: 1,
