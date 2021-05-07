@@ -10,9 +10,6 @@ export class AppComponent {
 
   sayHello: boolean = true;
 
-  item1={name:"ABC"}
-
-  
   items: any[] = [
     {
       id: 1,
